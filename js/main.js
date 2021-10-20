@@ -29,10 +29,13 @@ for (let i = 0 ; i < Math.sqrt(nCelle); i++) {
        divCell.className = 'celle'
        divCell.innerHTML = i * Math.sqrt(nCelle) + y + 1
        divRig.append(divCell)
-   }
+   
      cointainerEl.append(divRig)
 
-     
-
+     //addEventListener
+     divCell.addEventListener('click', function () {
+        this.style.backgroundColor = 'lightblue'
+     })
+    }
  
 }
